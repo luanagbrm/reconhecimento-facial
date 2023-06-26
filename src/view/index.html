@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reconhecimento de Expressões</title>
+  <script defer src="/src/script/lib/face-api.min.js"></script>
+  <script defer type="module" src="/src/script/client/index.js"></script>
+  <link rel="stylesheet" href="/src/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <li><a href="#info">Inicio</a></li>
+    <li><a href="#demo">Demonstração</a></li>
+  </nav>
+  <div class="wrapper">
+    <section class="info" id="info">
+      <div class="info-imagem">
+        <img src="img/Robot face-pana.png" class="imagem">
+      </div>
+      <div class="info-texto">
+        <h1>Face-api.</h1>
+        <p>Face-api.js é uma API JavaScript para detecção e reconhecimento facial no browser implementado sobre a API principal do tensorflow.js</p>
+        <a href="#demo" class="botao">Experimente</a>
+      </div>
+    </section>
+    <section class="demo" id="demo">
+      <div class="demo-texto">
+        <h1>Detector de expressões.</h1>
+        <p>Apresenta as emoções detectadas dentre uma série de 7 categorias
+        </p>
+      </div>
+      <div class="demo-conteudo">
+        <video id="video" width="420" height="310" autoplay muted></video>
+        <table>
+          <thead>
+            <tr>
+              <td class="head-categoria">
+                #
+              </td>
+              <td class="head-categoria">
+                Expressão
+              </td>
+              <td class="head-categoria">
+                Percentual
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+    
+          </tbody>
+        </table>
+    </div>
+    </section>
+  </div>
+</body>
+</html>
